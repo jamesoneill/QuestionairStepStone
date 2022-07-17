@@ -18,9 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\JO.QuestionairStepStone.Core\JO.QuestionairStepStone.Core.csproj" />
-    <ProjectReference Include="..\JO.QuestionairStepStone.Data\JO.QuestionairStepStone.Data.csproj" />
-    <ProjectReference Include="..\JO.QuestionairStepStone.Interfaces\JO.QuestionairStepStone.Interfaces.csproj" />
+    <ProjectReference Include="..\JO.QuestionnaireStepStone.Core\JO.QuestionnaireStepStone.Core.csproj" />
+    <ProjectReference Include="..\JO.QuestionnaireStepStone.Data\JO.QuestionnaireStepStone.Data.csproj" />
+    <ProjectReference Include="..\JO.QuestionnaireStepStone.Interfaces\JO.QuestionnaireStepStone.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

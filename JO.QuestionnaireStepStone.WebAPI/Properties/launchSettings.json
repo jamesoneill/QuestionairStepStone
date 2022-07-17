@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "profiles": {
-    "JO.QuestionairStepStone.WebAPI": {
+    "JO.QuestionnairStepStone.WebAPI": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

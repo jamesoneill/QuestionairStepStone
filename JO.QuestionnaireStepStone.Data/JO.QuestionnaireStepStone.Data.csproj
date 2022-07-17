@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\JO.QuestionairStepStone.Interfaces\JO.QuestionairStepStone.Interfaces.csproj" />
+    <ProjectReference Include="..\JO.QuestionnaireStepStone.Interfaces\JO.QuestionnaireStepStone.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JO.QuestionairStepStone.Interfaces.Data.Models
+namespace JO.QuestionnaireStepStone.Interfaces.Data.Models
 {
-    public interface IQuestionair
+    public interface IQuestionnaire
     {
-        string QuestionairTitle { get; set; }
+        string QuestionnaireTitle { get; set; }
         IList<string> QuestionsText { get; set; } 
     }
 }

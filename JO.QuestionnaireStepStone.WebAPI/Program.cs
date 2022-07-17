@@ -1,9 +1,9 @@
-using JO.QuestionairStepStone.Core;
-using JO.QuestionairStepStone.Data.Repository;
-using JO.QuestionairStepStone.Interfaces.Core;
-using JO.QuestionairStepStone.Interfaces.Data;
+using JO.QuestionnaireStepStone.Core;
+using JO.QuestionnaireStepStone.Data.Repository;
+using JO.QuestionnaireStepStone.Interfaces.Core;
+using JO.QuestionnaireStepStone.Interfaces.Data;
 
-namespace JO.QuestionairStepStone.WebAPI
+namespace JO.QuestionnaireStepStone.WebAPI
 {
     public class Program
     {
@@ -18,8 +18,8 @@ namespace JO.QuestionairStepStone.WebAPI
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.AddScoped<IQuestionairRepository, QuestionairRepository>();
-            builder.Services.AddScoped<IQuestionairService, QuestionairService>();
+            builder.Services.AddScoped<IQuestionnaireRepository, QuestionnaireRepository>();
+            builder.Services.AddScoped<IQuestionnaireService, QuestionnaireService>();
 
 
             var app = builder.Build();

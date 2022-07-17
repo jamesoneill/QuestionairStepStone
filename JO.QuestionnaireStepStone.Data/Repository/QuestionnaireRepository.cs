@@ -1,21 +1,21 @@
-﻿using JO.QuestionairStepStone.Data.Models;
-using JO.QuestionairStepStone.Interfaces.Data;
-using JO.QuestionairStepStone.Interfaces.Data.Models;
+﻿using JO.QuestionnaireStepStone.Data.Models;
+using JO.QuestionnaireStepStone.Interfaces.Data;
+using JO.QuestionnaireStepStone.Interfaces.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JO.QuestionairStepStone.Data.Repository
+namespace JO.QuestionnaireStepStone.Data.Repository
 {
-    public class QuestionairRepository : IQuestionairRepository
+    public class QuestionnaireRepository : IQuestionnaireRepository
     {
-        public async Task<IQuestionair> GetQuestionairAsync()
+        public async Task<IQuestionnaire> GetQuestionnaireAsync()
         {
-            return await Task.FromResult(new Questionair()
+            return await Task.FromResult(new Questionnaire()
             {
-                QuestionairTitle = "Geography Questions",
+                QuestionnaireTitle = "Geography Questions",
                 QuestionsText = new List<string>()
                 {
                     "What is the capital of Cuba?",

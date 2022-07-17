@@ -7,18 +7,18 @@ RUN apk add bash icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zlib tzda
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["JO.QuestionairStepStone.WebAPI/JO.QuestionairStepStone.WebAPI.csproj", "JO.QuestionairStepStone.WebAPI/"]
-RUN dotnet restore "JO.QuestionairStepStone.WebAPI/JO.QuestionairStepStone.WebAPI.csproj"
+COPY ["JO.QuestionnaireStepStone.WebAPI/JO.QuestionnaireStepStone.WebAPI.csproj", "JO.QuestionnaireStepStone.WebAPI/"]
+RUN dotnet restore "JO.QuestionnaireStepStone.WebAPI/JO.QuestionnaireStepStone.WebAPI.csproj"
 COPY . .
-WORKDIR "/src/JO.QuestionairStepStone.WebAPI"
-RUN dotnet build "JO.QuestionairStepStone.WebAPI.csproj" -c Release -o /app/build
+WORKDIR "/src/JO.QuestionnaireStepStone.WebAPI"
+RUN dotnet build "JO.QuestionnaireStepStone.WebAPI.csproj" -c Release -o /app/build
 
 
 FROM build AS publish
-RUN dotnet publish "JO.QuestionairStepStone.WebAPI.csproj" -c Release -o /app/publish
+RUN dotnet publish "JO.QuestionnaireStepStone.WebAPI.csproj" -c Release -o /app/publish
 
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "JO.QuestionairStepStone.WebAPI.dll"]
+ENTRYPOINT ["dotnet", "JO.QuestionnaireStepStone.WebAPI.dll"]
