@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JO.QuestionairStepStone.WebAPI", "JO.QuestionairStepStone.WebAPI\JO.QuestionairStepStone.WebAPI.csproj", "{63390531-C98C-4F8C-922E-838CAAD00E8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JO.QuestionairStepStone.Core", "JO.QuestionairStepStone.Core\JO.QuestionairStepStone.Core.csproj", "{26D70D0F-9BBB-4C75-AE37-51CC28064EFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JO.QuestionairStepStone.Data", "JO.QuestionairStepStone.Data\JO.QuestionairStepStone.Data.csproj", "{A6E8585E-0ECC-4C25-BED2-8088F0844359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JO.QuestionairStepStone.Interfaces", "JO.QuestionairStepStone.Interfaces\JO.QuestionairStepStone.Interfaces.csproj", "{012956D5-24C0-44E6-BFED-9C5BF0304F12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JO.QuestionairStepStone.UnitTests", "JO.QuestionairStepStone.UnitTests\JO.QuestionairStepStone.UnitTests.csproj", "{25DA9A31-6FAF-4895-A24D-A8E0AC6F9602}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63390531-C98C-4F8C-922E-838CAAD00E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63390531-C98C-4F8C-922E-838CAAD00E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63390531-C98C-4F8C-922E-838CAAD00E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63390531-C98C-4F8C-922E-838CAAD00E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26D70D0F-9BBB-4C75-AE37-51CC28064EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D70D0F-9BBB-4C75-AE37-51CC28064EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D70D0F-9BBB-4C75-AE37-51CC28064EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D70D0F-9BBB-4C75-AE37-51CC28064EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6E8585E-0ECC-4C25-BED2-8088F0844359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6E8585E-0ECC-4C25-BED2-8088F0844359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6E8585E-0ECC-4C25-BED2-8088F0844359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6E8585E-0ECC-4C25-BED2-8088F0844359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{012956D5-24C0-44E6-BFED-9C5BF0304F12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{012956D5-24C0-44E6-BFED-9C5BF0304F12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{012956D5-24C0-44E6-BFED-9C5BF0304F12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{012956D5-24C0-44E6-BFED-9C5BF0304F12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25DA9A31-6FAF-4895-A24D-A8E0AC6F9602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25DA9A31-6FAF-4895-A24D-A8E0AC6F9602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25DA9A31-6FAF-4895-A24D-A8E0AC6F9602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25DA9A31-6FAF-4895-A24D-A8E0AC6F9602}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF806C24-C219-4D83-83BF-91541A84276E}
+	EndGlobalSection
+EndGlobal
