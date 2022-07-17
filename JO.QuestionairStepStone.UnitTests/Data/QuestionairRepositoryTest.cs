@@ -12,7 +12,7 @@ namespace JO.QuestionairStepStone.UnitTests.Core
         }
 
         [Test]
-        public async Task GetQuestionairTesAsync()
+        public async Task GetQuestionairTestAsync()
         {
             IQuestionairRepository questionairRepository = new QuestionairRepository();
             var questionair = await questionairRepository.GetQuestionairAsync();
