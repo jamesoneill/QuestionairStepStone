@@ -10,7 +10,7 @@ From command line:
 
 cd to the root of the git repository
 
-"chmod +x filename.sh" to give the shell script execute permissions
+"chmod +x buildandrun.sh" to give the shell script execute permissions
 
 "./buildandrun.sh" to build and execute the applicaiton
 
