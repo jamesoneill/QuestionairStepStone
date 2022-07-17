@@ -1,10 +1,10 @@
 # QuestionairStepStone
 
 
-##Prerequisite
+## Prerequisite
 Docker cli - with multi stage builds
 
-##How to run
+## How to run
 
 From command line:
 
