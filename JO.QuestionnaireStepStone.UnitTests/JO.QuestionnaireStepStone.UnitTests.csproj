@@ -21,6 +21,7 @@
     <ProjectReference Include="..\JO.QuestionnaireStepStone.Core\JO.QuestionnaireStepStone.Core.csproj" />
     <ProjectReference Include="..\JO.QuestionnaireStepStone.Data\JO.QuestionnaireStepStone.Data.csproj" />
     <ProjectReference Include="..\JO.QuestionnaireStepStone.Interfaces\JO.QuestionnaireStepStone.Interfaces.csproj" />
+    <ProjectReference Include="..\JO.QuestionnaireStepStone.WebAPI\JO.QuestionnaireStepStone.WebAPI.csproj" />
   </ItemGroup>
 
 </Project>

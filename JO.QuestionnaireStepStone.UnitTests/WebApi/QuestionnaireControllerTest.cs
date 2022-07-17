@@ -1,18 +1,23 @@
-using JO.QuestionnaireStepStone.Interfaces.Data;
+﻿using JO.QuestionnaireStepStone.Data.Models;
 using JO.QuestionnaireStepStone.Interfaces.Core;
-using JO.QuestionnaireStepStone.Core;
+using JO.QuestionnaireStepStone.Interfaces.Data.Models;
+using JO.QuestionnaireStepStone.WebAPI.Controllers;
 using Moq;
-using JO.QuestionnaireStepStone.Data.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace JO.QuestionnaireStepStone.UnitTests.Core
+namespace JO.QuestionnaireStepStone.UnitTests.WebApi
 {
-    public class QuestionnaireServiceTest
+    internal class QuestionnaireControllerTest
     {
         [Test]
-        public async Task GetQuestionnaireTestAsync()
+        public async Task GetQuestionnairTestAsync()
         {
-            var questionnaireRepository = new Mock<IQuestionnaireRepository>();
-            questionnaireRepository.Setup(m => m.GetQuestionnaireAsync()).ReturnsAsync(new Questionnaire()
+            var questionnaireService = new Mock<IQuestionnaireService>();
+            IQuestionnaire questionnaireserviceReturn = new Questionnaire()
             {
                 QuestionnaireTitle = "Geography Questions",
                 QuestionsText = new List<string>()
@@ -22,11 +27,12 @@ namespace JO.QuestionnaireStepStone.UnitTests.Core
                     "What is the capital of Poland?",
                     "What is the capital of Germany?",
                 }
-            });
+            };
 
-            IQuestionnaireService questionnaireService = new QuestionnaireService(questionnaireRepository.Object);
+            questionnaireService.Setup(m => m.GetQuestionnaireAsync()).ReturnsAsync(questionnaireserviceReturn);
 
-            var questionnaire = await questionnaireService.GetQuestionnaireAsync();
+            QuestionnaireController questionnaireController = new QuestionnaireController(questionnaireService.Object);
+            var questionnaire = await questionnaireController.Get();
 
             var expectedOutcome = new Questionnaire()
             {
@@ -46,6 +52,7 @@ namespace JO.QuestionnaireStepStone.UnitTests.Core
             Assert.That(questionnaire.QuestionsText[1], Is.EqualTo(expectedOutcome.QuestionsText[1]));
             Assert.That(questionnaire.QuestionsText[2], Is.EqualTo(expectedOutcome.QuestionsText[2]));
             Assert.That(questionnaire.QuestionsText[3], Is.EqualTo(expectedOutcome.QuestionsText[3]));
+
 
         }
     }
